@@ -13,32 +13,41 @@
 @end
 
 @implementation ViewController
-@synthesize imgPicker;
-
+@synthesize imageView;
+- (IBAction)btnClicked:(id)sender {
+    imagePicker.delegate = self;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image;
+    NSURL *mediaURL;
+    mediaURL = (NSURL *)[info valueForKey: UIImagePickerControllerMediaURL];
+    image = (UIImage *) [info valueForKey:UIImagePickerControllerOriginalImage];
+    
+    imageView.image=image;
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+}
 - (void)viewDidLoad {
+    
+    imagePicker = [[UIImagePickerController alloc]init];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.imgPicker = [[UIImagePickerController alloc] init];
-    self.imgPicker.allowsEditing = YES;
-    self.imgPicker.delegate = self;
-    self.imgPicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
-    // UIImagePickerControllerSourceTypeCamera : to load the camera
-    //UIImagePickerControllerSourceTypePhotoLibrary : to load images from library
-    //UIImagePickerControllerSourceTypeSavedPhotosAlbum : loads all images saved
+   
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)grabImage {
-    [self presentViewController:self.imgPicker animated:YES completion:nil];
-}
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)img editingInfo:(NSDictionary *)editInfo {
-    image.image = img;
-    [[picker parentViewController] dismissModalViewControllerAnimated:YES];
-}
 
 @end
