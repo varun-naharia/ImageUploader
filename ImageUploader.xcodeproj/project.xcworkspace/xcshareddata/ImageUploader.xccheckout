@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C9C7A3A7-F201-45C4-921B-2042FF7954B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ImageUploader</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9FC91C4E4727E5728F4B0D71A8E0B206FEE82545</key>
+		<string>https://github.com/varun-naharia/ImageUploader.git</string>
+		<key>A7842CB36C01A9188A140BA71CF359A67F18908C</key>
+		<string>http://github.com/varun-naharia/iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ImageUploader.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9FC91C4E4727E5728F4B0D71A8E0B206FEE82545</key>
+		<string>../..</string>
+		<key>A7842CB36C01A9188A140BA71CF359A67F18908C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/varun-naharia/ImageUploader.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9FC91C4E4727E5728F4B0D71A8E0B206FEE82545</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A7842CB36C01A9188A140BA71CF359A67F18908C</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9FC91C4E4727E5728F4B0D71A8E0B206FEE82545</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ImageUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
