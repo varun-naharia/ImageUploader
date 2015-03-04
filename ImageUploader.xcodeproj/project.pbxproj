@@ -14,6 +14,7 @@
 		8BBC128E1A8DC0D800366819 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBC128D1A8DC0D800366819 /* Images.xcassets */; };
 		8BBC12911A8DC0D800366819 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BBC128F1A8DC0D800366819 /* LaunchScreen.xib */; };
 		8BBC129D1A8DC0D800366819 /* ImageUploaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC129C1A8DC0D800366819 /* ImageUploaderTests.m */; };
+		8BC692571AA49174006B1ADA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC692561AA49173006B1ADA /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8BBC12961A8DC0D800366819 /* ImageUploaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageUploaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBC129B1A8DC0D800366819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BBC129C1A8DC0D800366819 /* ImageUploaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUploaderTests.m; sourceTree = "<group>"; };
+		8BC692561AA49173006B1ADA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC692571AA49174006B1ADA /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		8BBC12741A8DC0D600366819 = {
 			isa = PBXGroup;
 			children = (
+				8BC692561AA49173006B1ADA /* CoreData.framework */,
 				8BBC127F1A8DC0D700366819 /* ImageUploader */,
 				8BBC12991A8DC0D800366819 /* ImageUploaderTests */,
 				8BBC127E1A8DC0D700366819 /* Products */,
@@ -414,6 +418,7 @@
 				8BBC12A21A8DC0D800366819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BBC12A31A8DC0D800366819 /* Build configuration list for PBXNativeTarget "ImageUploaderTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				8BBC12A51A8DC0D800366819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
