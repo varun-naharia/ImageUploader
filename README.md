@@ -7,7 +7,9 @@ If you found any problem in the code ask me I will resolve that ASAP.
 you can contact me to from my website www.techwizard.in
 PHP Code:-
 file name should be savetofile.php
+
 <?php
+
     $username=$_POST['full_name'];
     $mobile=$_POST['mobile'];
     $myfile = fopen("log.txt", "w") or die("Unable to open file!");
@@ -17,4 +19,5 @@ file name should be savetofile.php
     move_uploaded_file($_FILES['userfile']['tmp_name'], "uploads/" . $_FILES['userfile']['name']);
     echo 'successful'.$username." ".$mobile;
     fclose($myfile);
+    
 ?>
