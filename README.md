@@ -8,7 +8,7 @@ you can contact me to from my website www.techwizard.in
 PHP Code:-
 file name should be savetofile.php
 
-<?php
+    <?php
 
     $username=$_POST['full_name'];
     $mobile=$_POST['mobile'];
@@ -20,4 +20,4 @@ file name should be savetofile.php
     echo 'successful'.$username." ".$mobile;
     fclose($myfile);
     
-?>
+    ?>
